@@ -1,0 +1,348 @@
+:root{
+    --blue:#0c2c43;
+    --tea-grenn:#0c2c43;
+    --como-green:#54816d;
+    --asparagus:#80a470;
+    --viridian-green:#3d6b63;
+    --gossamer:#284f54;
+    --manatee:#f3f6f8;
+    --slate-gray:#7c8c9471;
+    --dark-blue:#38586c;
+    --white:#ffffff;
+    --card-color:#8C9CA4;
+    --yellow:#FFD25E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gossamer);
+    padding: 20px 0;
+    position: fixed;
+}
+
+#header{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+#header img{
+    width: 50px;
+    border-radius: 50px;
+}
+
+#header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header nav ul li{
+    list-style-type: none;
+    margin: 0 20px ;
+}
+#header nav ul li a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+/* Debit Heros */
+#heros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/Image.png);
+    background-size: cover;
+    height: 100vh;
+}
+#heros .container{
+    width: 80%;
+    margin-top: 80px;
+}
+#heros .container h1{
+    width: 60%;
+    font-size: 3em;
+    color: var(--white);
+}
+#heros .container p{
+    font-size: 1.5em;
+    color: var(--white);
+    margin: 40px 0;
+}
+#heros .container button{
+    background-color: var(--gossamer);
+    padding: 20px 30px;
+    border: none;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+/* fin Heros */
+
+
+/* debut services */
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 0;
+}
+#services h1{
+    font-size: 3em;
+}
+#services .service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+#services .service .item-service{
+    width: 40%;
+    height: 350px;
+    border: 1px solid var(--card-color);
+    box-shadow: 0 0 3px var(--card-color);
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+#services .service .item-service img{
+    width: 50%;
+}
+#services .service .item-service h2{
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+#services .service .item-service p{
+    width: 80%;
+    margin: 10px 0;
+}
+/* fin service */
+
+
+/* debut apropos */
+#apropos{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--manatee);
+}
+
+#apropos h1{
+    font-size: 3em;
+}
+
+#apropos .apropos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 50px;
+}
+#apropos .apropos .left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#apropos .apropos .right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#apropos .apropos .left p{
+    width: 80%;
+    line-height: 2;
+    font-size: 1.3em;
+}
+#apropos .apropos .right img{
+    width: 80%;
+    border-radius: 5px;
+}
+/* fin apropos */
+
+
+/* debut section temoignages */
+#temoignages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 0;
+}
+#temoignages h1{
+    font-size: 3em;
+}
+
+#temoignages .temoignages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 40px;
+}
+
+#temoignages .temoignages .item-temoignage{
+    border: 1px solid var(--card-color);
+    box-shadow: 0 0 3px var(--card-color);
+    border-radius: 5px;
+    width: 50%;
+    height: 380px;
+    margin: 0 20px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#temoignages .temoignages .item-temoignage img{
+    width: 60%;
+}
+#temoignages .temoignages .item-temoignage .stars .bx-star{
+    margin: 20px 10px;
+    font-size: 1.3em;
+    color: var(--yellow) ;
+}
+#temoignages .temoignages .item-temoignage p{
+    width: 80%;
+}
+/* fin section temoignages */
+
+
+/* debut section contact */
+#contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--manatee);
+    padding: 50px 0;
+}
+
+#contact h1{
+    font-size: 3em;
+}
+
+#contact .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 50px 0;
+}
+#contact .contact .left{
+    width: 50%;
+}
+#contact .contact .left form{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#contact .contact .left form{
+    background-color: var(--blue);
+    padding: 20px;
+    color: var(--white);
+}
+#contact .contact .left form .group-form{
+    width: 100%;
+    margin: 10px 0;
+}
+#contact .contact .left form .btn{
+    width: 100%;
+}
+#contact .contact .left form .btn button{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--gossamer);
+    border: none;
+    font-size: 1.2em;
+    color: var(--white);
+    cursor: pointer;
+}
+#contact .contact .left form input[type="text"],input[type="email"]
+{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+#contact .contact .left form textarea{
+    width: 100%;
+    height: 150px;
+    margin: 10px 0;
+}
+#contact .contact .right{
+    width: 50%;
+}
+#contact .contact .right iframe{
+    width: 100%;
+}
+/* fin section contact */
+
+/* debut footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--gossamer);
+}
+.footer{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0;
+    color: var(--white);
+}
+.footer .contact{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--white);
+}
+
+.footer .contact .item a{
+    text-decoration: none;
+    color: var(--white);
+}
+.footer .foot{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* fin footer */
