@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +14,10 @@
             <img src="assets/images/BTP_mini-Solutions_Logo.png" alt="Logo">
             <nav>
                 <ul class="menu">
-                    <li><a href="">Acceuil</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">A propos</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#apropos">A propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="menu_toggle"></div>
             </nav>
@@ -119,10 +119,10 @@
         <h1>Contactez-nous</h1>
         <div class="contact">
             <div class="left">
-                <form action="#">
+                <form action="# " id="contactForm">
                     <div class="group-form">
                         <label for="nom">Nom</label>
-                        <input type="text" name="nom" id="nom" placeholder="Name" required>
+                        <input type="text" name="nom" id="nom" pattern="[A-Za-z]+"  placeholder="Name" required>
                     </div>
                     <div class="group-form">
                         <label for="email">Email</label>
@@ -133,7 +133,7 @@
                         <textarea name="message" id="message" placeholder="Massage" required></textarea>
                     </div>
                     <div class="btn">
-                        <button>Contact</button>
+                        <button type="submit">Contact</button>
                     </div>
                 </form>
             </div>
@@ -167,6 +167,7 @@
                 </div>
             </div>
         </div>
+        <span class="flesh"><a href="#heros"><i class='bx bxs-caret-up-circle'></i></a></span>
        </footer>
        <!-- fin footer -->
     <script src="assets/js/script.js"></script>

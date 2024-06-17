@@ -24,6 +24,9 @@ body{
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
     width: 100%;
     display: flex;
@@ -343,6 +346,21 @@ footer{
     justify-content: space-between;
     width: 100%;
     margin: 10px 0;
+}
+footer .flesh{
+    position:fixed;
+    background-color: var(--blue);
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .flesh i{
+    font-size: 2em;
+    color: var(--white);
 }
 
 /* fin footer */
