@@ -208,12 +208,36 @@
     /* fin section temoignages */
 
     /* footer */
-    footer .contact .item{
-        font-size: 0.9em;
-    }
-    footer .foot .item{
-        font-size: 0.9em;
-    }
+    .footer .contact{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--white);
+        }
+        .footer .foot{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 10px 0;
+        }
+        footer .contact .item{
+            font-size: 1em;
+            margin: 10px;
+            text-align: center;
+        }
+        footer .foot .item{
+            font-size: 1em;
+            margin: 10px;
+            text-align: center;
+        }
+        footer .foot .ord1{
+            order: 2;
+        }
+        footer .foot .ord2{
+            order: 1;
+        }
 
     
 }
@@ -394,10 +418,34 @@
     /* fin section temoignages */
 
     /* debut footer */
+    .footer .contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--white);
+    }
+    .footer .foot{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 0;
+    }
     footer .contact .item{
-        font-size: 0.7em;
+        font-size: 1em;
+        margin: 10px;
+        text-align: center;
     }
     footer .foot .item{
-        font-size: 0.7em;
+        font-size: 1em;
+        margin: 10px;
+        text-align: center;
+    }
+    footer .foot .ord1{
+        order: 2;
+    }
+    footer .foot .ord2{
+        order: 1;
     }
 }
