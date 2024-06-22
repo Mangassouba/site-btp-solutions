@@ -33,7 +33,7 @@ header{
     justify-content: center;
     align-items: center;
     background-color: var(--gossamer);
-    padding: 20px 0;
+    padding: 10px 0;
     position: fixed;
 }
 
@@ -69,8 +69,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/Image.png);
+    background-image: url(../images/Image.webp);
     background-size: cover;
+    background-position: center;
+
     height: 100vh;
 }
 #heros .container{
